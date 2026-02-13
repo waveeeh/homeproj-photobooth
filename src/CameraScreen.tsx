@@ -204,7 +204,7 @@ export const CameraScreen = ({ onBack, onCapture }: CameraScreenProps) => {
             {/* Filters */}
             <div className="flex flex-col items-center gap-1 sm:gap-2 w-full sm:w-auto">
               <span className="text-[10px] sm:text-xs text-gray-500 font-medium">Filter</span>
-              <div className="flex gap-1 sm:gap-2 overflow-x-auto pb-1 sm:pb-2 px-1 scrollbar-hide justify-start sm:justify-center w-full max-w-full">
+              <div className="flex gap-1 sm:gap-2 overflow-x-auto pb-1 sm:pb-2 px-1 scrollbar-hide justify-center w-full max-w-full">
                   {(["none", "grayscale", "sepia", "soft", "vintage"] as FilterType[]).map((f) => (
                       <button
                           key={f}
