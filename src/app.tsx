@@ -89,6 +89,9 @@ export default function App() {
           )}
         </AnimatePresence>
       </main>
+      <footer className="fixed bottom-2 right-2 text-xs text-gray-400 z-50">
+        created with 💖 by waveeh
+      </footer>
     </div>
   );
 }

@@ -98,6 +98,10 @@ export const ResultScreen = ({ images, filter, stripStyle, onRetake }: ResultScr
         
         ctx.fillText("HAPPY VALENTINE'S DAY 💌", stripWidth / 2, footerStartY);
         
+        ctx.font = "400 10px 'Courier New', monospace";
+        ctx.fillStyle = metaColor;
+        ctx.fillText("© waveeeh", stripWidth / 2, footerStartY + 70);
+
         // Date
         const date = new Date();
         const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
