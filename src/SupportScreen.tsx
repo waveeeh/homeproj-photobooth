@@ -74,7 +74,7 @@ export const SupportScreen = ({ onContinue }: SupportScreenProps) => {
               <div className="absolute -inset-4 bg-gradient-to-br from-pink-200/50 via-purple-200/50 to-orange-200/50 rounded-2xl blur-xl"></div>
               <div className="relative w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 bg-white rounded-2xl p-3 border-2 border-gray-200 shadow-lg mx-auto">
                 <ImageWithFallback 
-                  src="https://iili.io/qFE76Ou.th.jpg" 
+                  src="https://iili.io/qFE76Ou.jpg" 
                   alt="Donation QR Code"
                   className="w-full h-full object-cover rounded-xl"
                 />
