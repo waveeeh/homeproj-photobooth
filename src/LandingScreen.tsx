@@ -34,9 +34,10 @@ export const LandingScreen = ({ onStart }: LandingScreenProps) => {
           />
         </motion.div>
 
-        {/* Title */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-2 sm:mb-3 font-['Poppins'] tracking-tight text-center">
-          Home Proj.<br/>Photo Booth
+        {/* Title - FIXED: Better spacing for mobile */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-2 font-['Poppins'] tracking-tight text-center">
+          <span className="block text-xl sm:text-2xl md:text-3xl text-gray-500 mb-1">Home Proj.</span>
+          <span>Photo Booth</span>
         </h1>
         
         {/* Subtitle */}

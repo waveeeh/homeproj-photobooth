@@ -72,50 +72,38 @@ export const SupportScreen = ({ onContinue }: SupportScreenProps) => {
             {/* QR Code */}
             <div className="relative mb-6">
               <div className="absolute -inset-4 bg-gradient-to-br from-pink-200/50 via-purple-200/50 to-orange-200/50 rounded-2xl blur-xl"></div>
-              <div className="relative w-56 h-56 bg-white rounded-2xl p-3 border-2 border-gray-200 shadow-lg">
+              <div className="relative w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 bg-white rounded-2xl p-3 border-2 border-gray-200 shadow-lg mx-auto">
                 <ImageWithFallback 
-                  src="https://imgur.com/a/oFdwMFf"
+                  src="https://iili.io/qFE76Ou.th.jpg" 
                   alt="Donation QR Code"
                   className="w-full h-full object-cover rounded-xl"
                 />
               </div>
             </div>
 
-            {/* Description */}
-            <div className="flex items-center gap-2 mb-6">
-              <Heart size={18} className="text-pink-500 fill-pink-500 animate-pulse" />
-              <p className="text-sm text-gray-600 font-medium">
-                Scan to support!
-              </p>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex gap-3 w-full">
-              {/* GitHub - Verify this link */}
+            {/* Social Links - Centered */}
+            <div className="flex flex-col sm:flex-row gap-3 w-full justify-center"> {/* ← ADDED justify-center */}
               <a 
                 href="https://github.com/waveeeh" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md"
-                title="GitHub"
+                className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gray-900 text-white text-sm font-medium hover:bg-black transition-all hover:scale-105 shadow-md"
               >
                 <Github size={16} />
-                GitHub
+                <span>GitHub</span>
               </a>
 
               <a 
-                href="https://instagram.com/waveeeh"  // Try without www.
+                href="https://instagram.com/waveeeh"
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 text-white text-sm font-medium hover:shadow-xl transition-all hover:scale-105 shadow-md"
-                title="Instagram"
+                className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 text-white text-sm font-medium hover:shadow-xl transition-all hover:scale-105 shadow-md"
               >
                 <Instagram size={16} />
-                Instagram
+                <span>Instagram</span>
               </a>
-
             </div>
-        </div>
+          </div>
         </motion.div>
 
         {/* Timer & Skip Button */}

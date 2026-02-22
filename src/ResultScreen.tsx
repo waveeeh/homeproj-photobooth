@@ -197,7 +197,7 @@ export const ResultScreen = ({
         </div>
       </div>
 
-      {/* Fixed Bottom Buttons */}
+     {/* Fixed Bottom Buttons - FIXED */}
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg">
         <div className="flex gap-3 justify-center items-center max-w-md mx-auto">
           <motion.button
@@ -206,13 +206,13 @@ export const ResultScreen = ({
             className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gray-100 text-gray-700 text-sm font-medium hover:bg-gray-200 transition-colors"
           >
             <RefreshCcw size={16} />
-            <span className=" xs:inline">Retake</span>
+            <span>Retake</span>  {/* FIXED: Removed xs:inline class */}
           </motion.button>
           
           {!downloadUrl ? (
             <button disabled className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gray-400 text-white text-sm font-medium cursor-not-allowed">
               <span className="w-4 h-4 border-2 border-white/50 border-t-white rounded-full animate-spin" />
-              <span className=" xs:inline">Processing</span>
+              <span>Processing</span>  {/* FIXED: Removed xs:inline class */}
             </button>
           ) : (
             <motion.button
@@ -222,14 +222,11 @@ export const ResultScreen = ({
               className="flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gray-900 text-white text-sm font-medium hover:bg-black transition-colors shadow-md disabled:opacity-50"
             >
               <Download size={16} />
-              <span className=" xs:inline">{saving ? "Saving..." : "Download"}</span>
+              <span>{saving ? "Saving..." : "Download"}</span>  {/* FIXED: Removed xs:inline class */}
             </motion.button>
           )}
         </div>
       </div>
-
-      {/* Hidden Canvas */}
-      <canvas ref={canvasRef} className="hidden" />
     </div>
   );
 };
